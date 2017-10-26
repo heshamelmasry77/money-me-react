@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import Routes from './Routes';
-import logo from './logo.svg';
-import './App.scss';
+import logo from './logo.svg'; // Tell Webpack this JS file uses this image
+import './App.css';
 
 class App extends Component {
   //function to handle click event and import module A
@@ -27,7 +27,7 @@ class App extends Component {
         </Helmet>
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2 className="text-center">Welcome to React</h2>
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
