@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
+import Routes from './Routes';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  //function to handle click event and import module A
+  handleClick = () => {
+    import('./modules/moduleA')
+      .then(({ moduleA }) => {
+        // Use moduleA
+        console.log(moduleA);
+      })
+      .catch(err => {
+        // Handle failure
+      });
+  };
   render() {
+    const childProps = {};
     return (
       <div className="App">
         <Helmet>
@@ -19,6 +32,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <button onClick={this.handleClick}>Load</button>
+        <Routes childProps={childProps} />
       </div>
     );
   }
