@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import Routes from './Routes';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   //function to handle click event and import module A
