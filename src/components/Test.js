@@ -7,7 +7,8 @@ class Test extends Component {
       <div className="Test">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>My NotFound page</title>
+          <title>My test page</title>
+          <meta name="description" content="Helmet test" />
           <link rel="canonical" href="http://mysite.com/example" />
         </Helmet>
         <p>i am fickk page</p>

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "flow-bin": "^0.57.3",
     "husky": "^0.14.3",
     "lint-staged": "^4.3.0",
     "node-sass-chokidar": "0.0.3",
@@ -16,6 +17,7 @@
     "react-loadable": "^5.3.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.0.14",
+    "react-styleguidist": "^6.0.31",
     "styled-components": "^2.2.2"
   },
   "lint-staged": {
@@ -25,6 +27,8 @@
     ]
   },
   "scripts": {
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "precommit": "lint-staged",
@@ -32,7 +36,8 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "flow": "flow"
   },
   "devDependencies": {
     "react-snapshot": "^1.2.0"

@@ -7,7 +7,7 @@ import './App.css';
 class App extends Component {
   //function to handle click event and import module A
   handleClick = () => {
-    import('./modules/moduleA')
+    import('./components/modules/moduleA')
       .then(({ moduleA }) => {
         // Use moduleA
         console.log(moduleA);
