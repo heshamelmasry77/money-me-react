@@ -1,20 +1,49 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+//
+// class NotFound extends Component {
+//   render() {
+//     return (
+//       <div className="NotFound">
+//         <Helmet>
+//           <meta charSet="utf-8" />
+//           <title>My NotFound page</title>
+//           <meta name="description" content="Helmet not found" />
+//           <link rel="canonical" href="http://mysite.com/example" />
+//         </Helmet>
+//         <p>i am NotFound page</p>
+//         <p> test message :{this.props.message}</p>
+//       </div>
+//     );
+//   }
+// }
+//
+//
+// NotFound.propTypes = {
+//   message: PropTypes.string
+// };
+//
+//
 
-class NotFound extends Component {
-  render() {
-    return (
-      <div className="NotFound">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>My NotFound page</title>
-          <meta name="description" content="Helmet not found" />
-          <link rel="canonical" href="http://mysite.com/example" />
-        </Helmet>
-        <p>i am NotFound page</p>
-      </div>
-    );
-  }
-}
+const NotFound = ({ message }) => (
+  <div className="NotFound">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>My NotFound page</title>
+      <meta name="description" content="Helmet not found" />
+      <link rel="canonical" href="http://mysite.com/example" />
+    </Helmet>
+    <p>i am NotFound page</p>
+    <p> test message :{message}</p>
+  </div>
+);
+
+NotFound.defaultProps = {
+  message: 'hesham'
+};
+NotFound.propTypes = {
+  message: PropTypes.string.isRequired
+};
 
 export default NotFound;

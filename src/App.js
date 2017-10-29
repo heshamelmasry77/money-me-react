@@ -4,6 +4,8 @@ import Routes from './Routes';
 import logo from './logo.svg'; // Tell Webpack this JS file uses this image
 import './stylesheets/App.css';
 
+// import SkiDayList from './components/SkiDayList';
+
 class App extends Component {
   //function to handle click event and import module A
   handleClick = () => {
@@ -16,6 +18,7 @@ class App extends Component {
         // Handle failure
       });
   };
+
   render() {
     const childProps = {};
     return (
@@ -33,6 +36,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <button onClick={this.handleClick}>Load</button>
+
         <Routes childProps={childProps} />
       </div>
     );
