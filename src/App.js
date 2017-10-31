@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import Routes from './Routes';
-import logo from './logo.svg'; // Tell Webpack this JS file uses this image
+//import logo from './logo.svg'; // Tell Webpack this JS file uses this image
+import Header from './components/Shared/Header/Header';
+import Footer from './components/Shared/Footer/Footer';
 import './stylesheets/App.css';
 
 // import SkiDayList from './components/SkiDayList';
@@ -19,6 +21,11 @@ class App extends Component {
       });
   };
 
+  state = {
+    pageHeader: 'Naming me ',
+    pageFooter: 'i am page footer'
+  };
+
   render() {
     const childProps = {};
     return (
@@ -29,15 +36,14 @@ class App extends Component {
           <link rel="canonical" href="http://mysite.com/example" />
         </Helmet>
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2 className="text-center">Welcome to React</h2>
+          {/*<img src={logo} className="App-logo" alt="logo" />*/}
+          {/*<h2 className="text-center">Welcome to React</h2>*/}
+          <Header message={this.state.pageHeader} />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <button onClick={this.handleClick}>Load</button>
 
         <Routes childProps={childProps} />
+        <Footer message={this.state.pageFooter} />
       </div>
     );
   }
