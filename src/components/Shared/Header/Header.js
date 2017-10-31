@@ -1,19 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 //import PropTypes from 'prop-types';
 import MoneyMeLogo from '../../../assets/logos/MoneyMeLogo.png'; // Tell Webpack this JS file uses this image
 import '../../../stylesheets/header/Header.css';
+import NavbarInstance from '../Header/modules/Navbar';
 
-const Header = () => {
-  return (
-    <div className="Header">
-      <div className="head">
-        <a href="/" className="logo">
-          <img src={MoneyMeLogo} alt="MoneyMe Logo" />MoneyMe
-        </a>
+class Header extends Component {
+  render() {
+    return (
+      <div className="Header">
+        <div className="head">
+          <a href="/" className="logo">
+            <img src={MoneyMeLogo} alt="MoneyMe Logo" />MoneyMe
+          </a>
+        </div>
+        <NavbarInstance />
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 Header.propTypes = {
   // message: PropTypes.string,
