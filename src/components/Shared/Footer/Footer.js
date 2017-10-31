@@ -1,6 +1,6 @@
 import React from 'react';
 //import PropTypes from 'prop-types';
-import logo from '../../../logo.svg'; // Tell Webpack this JS file uses this image
+import logo from '../../../assets/logos/ReactLogo.svg'; // Tell Webpack this JS file uses this image
 import '../../../stylesheets/footer/Footer.css';
 
 const Footer = () => {
@@ -20,17 +20,17 @@ const Footer = () => {
           <div className="col-xs-12 col-sm-12 col-md-6 text-center copyrights">
             <h2>
               <b>MoneyMe </b>
-              is owned by{' '}
+              <span>is owned by</span>
               <b>
-                Three Donuts
-                <span property="schema:copyrightYear">2017</span>
+                <span>Three Donuts</span>
+                <span property="schema:copyrightYear"> 2017</span>
               </b>
             </h2>
           </div>
           <div className="col-xs-12  col-sm-12 col-md-3 credits text-center">
             <p>
-              Coded with <span>♥</span> &{' '}
-              <img src={logo} className="App-logo" alt="logo" /> by{' '}
+              Coded with <span>♥</span> &
+              <img src={logo} className="App-logo" alt="logo" /> by
               <span property="schema:copyrightHolder">Hesh Ramsis</span>
             </p>
             <p>Secure 128-bit SSL encrypted.</p>

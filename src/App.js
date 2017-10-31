@@ -35,12 +35,10 @@ class App extends Component {
           <title>My Title</title>
           <link rel="canonical" href="http://mysite.com/example" />
         </Helmet>
-        <div className="App-header">
-          {/*<img src={logo} className="App-logo" alt="logo" />*/}
-          {/*<h2 className="text-center">Welcome to React</h2>*/}
-          <Header message={this.state.pageHeader} />
-        </div>
-        <button onClick={this.handleClick}>Load</button>
+        {/*<img src={logo} className="App-logo" alt="logo" />*/}
+        {/*<h2 className="text-center">Welcome to React</h2>*/}
+        <Header message={this.state.pageHeader} />
+        {/*<button onClick={this.handleClick}>Load</button>*/}
 
         <Routes childProps={childProps} />
         <Footer message={this.state.pageFooter} />

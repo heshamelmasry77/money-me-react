@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import GoBeer from 'react-icons/lib/go/beer';
-import Header from './Shared/Header/Header';
 import ContestPreview from './ContestPreview';
 import data from '../testData.json';
 
@@ -50,7 +49,6 @@ class Test extends Component {
         <p>
           i am beer page <GoBeer />
         </p>
-        <Header message={this.state.pageHeader} />
         <div>
           {this.state.contests.map(contest => (
             <ContestPreview key={contest.id} {...contest} />

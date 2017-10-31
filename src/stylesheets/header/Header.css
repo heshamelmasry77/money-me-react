@@ -1,3 +1,26 @@
-.Header {
-  background-color: red;
+.Header .head {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #232322;
+  box-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+}
+.Header .head a.logo {
+  color: #ffffff;
+  font-size: 24px;
+  white-space: nowrap;
+  outline: none !important;
+  line-height: 90px;
+}
+.Header .head a.logo img {
+  width: 40px;
+  margin-right: 3px;
+}
+.Header .head a.logo:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.Header .head a.logo:focus {
+  text-decoration: none;
 }
