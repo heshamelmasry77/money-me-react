@@ -32,7 +32,13 @@ class App extends Component {
       <div className="App">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>My Title</title>
+          <title>
+            *** MoneyMe TOP Paying HYIP - Top Bitcoin Mining - Hyip Monitor ***
+          </title>
+          <meta
+            name="description"
+            content="Premium HYIPs are the ones that we invested and monitored. The premium hyip ranking is based on our experience and for your reference only."
+          />
           <link rel="canonical" href="https://moneyme.xyz/example" />
         </Helmet>
         {/*<img src={logo} className="App-logo" alt="logo" />*/}
