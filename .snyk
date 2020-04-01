@@ -1,0 +1,138 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack-dev-server > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2020-04-01T23:38:53.430Z'
+    - react-styleguidist > webpack-dev-server > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2020-04-01T23:38:53.430Z'
+  'npm:extend:20180424':
+    - node-sass-chokidar > node-sass > request > extend:
+        patched: '2020-04-01T23:38:53.430Z'
+    - react-styleguidist > markdown-to-jsx > unified > extend:
+        patched: '2020-04-01T23:38:53.430Z'
+    - react-styleguidist > remark > unified > extend:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > extend:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-environment-jsdom > jsdom > request > extend:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > extend:
+        patched: '2020-04-01T23:38:53.430Z'
+    - react-styleguidist > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > extend:
+        patched: '2020-04-01T23:38:53.430Z'
+  'npm:hoek:20180212':
+    - node-sass-chokidar > node-sass > request > hawk > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > node-sass > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > node-sass > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > hawk > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > node-sass > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-environment-jsdom > jsdom > request > hawk > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-environment-jsdom > jsdom > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-environment-jsdom > jsdom > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > hawk > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-environment-jsdom > jsdom > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > hawk > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - react-styleguidist > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - react-styleguidist > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - react-styleguidist > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - react-styleguidist > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:38:53.430Z'
+  'npm:stringstream:20180511':
+    - node-sass-chokidar > node-sass > request > stringstream:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > stringstream:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-environment-jsdom > jsdom > request > stringstream:
+        patched: '2020-04-01T23:38:53.430Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > stringstream:
+        patched: '2020-04-01T23:38:53.430Z'
+    - react-styleguidist > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-04-01T23:38:53.430Z'
+    - jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > stringstream:
+        patched: '2020-04-01T23:38:53.430Z'
+  'npm:tough-cookie:20170905':
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2020-04-01T23:38:53.430Z'
+    - react-styleguidist > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2020-04-01T23:38:53.430Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2020-04-01T23:38:53.430Z'
