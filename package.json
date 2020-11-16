@@ -29,7 +29,7 @@
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
     "husky": "^0.14.3",
-    "jest": "20.0.4",
+    "jest": "24.0.0",
     "lint-staged": "^4.3.0",
     "morgan": "^1.9.0",
     "node-sass-chokidar": "0.0.3",
