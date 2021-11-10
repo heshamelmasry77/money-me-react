@@ -27,7 +27,7 @@
     "file-loader": "0.11.2",
     "flow-bin": "^0.57.3",
     "fs-extra": "3.0.1",
-    "html-webpack-plugin": "2.29.0",
+    "html-webpack-plugin": "4.0.0",
     "husky": "^0.14.3",
     "jest": "20.0.4",
     "lint-staged": "^4.3.0",
@@ -53,7 +53,7 @@
     "styled-components": "^2.2.2",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "0.5.9",
-    "webpack": "3.5.1",
+    "webpack": "4.26.0",
     "webpack-dev-server": "2.8.2",
     "webpack-manifest-plugin": "1.2.1",
     "whatwg-fetch": "2.0.3"
